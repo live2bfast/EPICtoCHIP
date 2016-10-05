@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <title>CHIP Data Converter</title>
+    <link href="Content/Site.css" rel="stylesheet" />
+   <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+
+   </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form runat="server">
+            <ajaxToolkit:ToolkitScriptManager runat="server"></ajaxToolkit:ToolkitScriptManager>
+            <div class="Headerbar" style="height:100px;width:100%;background:#006595 url('../images/logo.png') top left no-repeat;">
+      <i style="position:relative;left:400px;top:30px;color:white;font-size:x-large">CHIP Data Converter</i></div>
+
+       
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+           
+
+    </form>
+</body>
+</html>
